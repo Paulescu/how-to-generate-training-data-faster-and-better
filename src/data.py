@@ -18,14 +18,15 @@ config = dotenv_values(get_project_root() / ".env")
 
 QUERY_TEMPLATE = """
 SELECT
-    top(100)
-    callDate
-    ,callType
-    ,disposition
+    ts
+    ,feature1
+    ,feature2
+    ,...
+    ,target
 FROM
-    tel.callSessions WITH(NOLOCK)
+    your_table WITH(NOLOCK)
 WHERE
-    callDate BETWEEN '{date}' AND DATEADD(day, 1, '{date}')
+    ts BETWEEN '{date}' AND DATEADD(day, 1, '{date}')
 """
 
 
