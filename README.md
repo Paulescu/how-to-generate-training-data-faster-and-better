@@ -5,7 +5,7 @@
 Pattern to generate tabular training data from an SQL-type DB. Faster and better
 than what you are doing at the moment.
 
-Go check my blog post to know more.
+Go check my [blog post](http://datamachines.xyz/2021/10/08/how-to-generate-training-data-faster-and-better/) to know more.
 
 ## Quick setup
 
